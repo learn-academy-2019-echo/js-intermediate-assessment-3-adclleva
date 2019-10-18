@@ -5,7 +5,13 @@
 
 // 1. Write a function called getFib that returns the first 10 numbers of the Fibonacci sequence in an array. Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
+	const getFirstTenFibArr = () => {
+		let fibArr = [1, 1]
 
+		for (let i = 0; i < 10; i++) {
+			
+		}
+	}
 
 // 2. Write a function called oddChecker that takes in an array and returns a new array of only odd numbers.
 
