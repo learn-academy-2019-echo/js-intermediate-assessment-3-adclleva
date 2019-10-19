@@ -88,6 +88,10 @@ const multTwo = arr => {
 	})
 }
 
+console.log(multTwo([3, 4, 5]))
+console.log(multTwo([23, -9, 0]))
+console.log(multTwo([4.5, -4.5, 12]))
+
 // 6. Write a function called letterCounter that logs the number of times the letter "l" appears in ourString.
 console.log("\n 6. ----------------------------")
 var ourString = "Hello Learn Students!"
@@ -148,10 +152,9 @@ var myCar = {
   }
 }
 
-const { make, model, specs } = myCar
-
-console.log(specs.doors)
-console.log(specs.transmission)
+const { doors, transmission } = myCar.specs
+console.log(doors)
+console.log(transmission)
 
 // 10. STRETCH: Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
 console.log("\n 10. ----------------------------")
