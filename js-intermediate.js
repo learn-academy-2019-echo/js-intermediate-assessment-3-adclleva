@@ -131,13 +131,20 @@ var radius1 = 1 // => ~12.57
 var radius2 = 12 // => ~1908.56
 var radius3 = 3.14 // => ~123.9
 
-const areaOfSphere = radius => {
-	return (4 * Math.PI * Math.pow(radius, 2)).toFixed(3)
+class Sphere {
+	constructor(radius) {
+		this.radius = radius
+	}
+	areaOfSphere() {
+	return (4 * Math.PI * Math.pow(this.radius, 2)).toFixed(3)
+	}
 }
-
-console.log(areaOfSphere(radius1))
-console.log(areaOfSphere(radius2))
-console.log(areaOfSphere(radius3))
+const sphere1 = new Sphere(1)
+const sphere2 = new Sphere(12)
+const sphere3 = new Sphere(3.14)
+console.log(sphere1.areaOfSphere())
+console.log(sphere2.areaOfSphere())
+console.log(sphere3.areaOfSphere())
 
 // 9. Use object destructuring to return the nested values of specs. Expected output: 4, "manual"
 // Don't overthink this one, it's just destrcturing practice.
