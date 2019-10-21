@@ -180,8 +180,6 @@ const totalArrSum = arr => {
 
 	let sumsArr = [arr[0]];
 
-	console.log(sumsArr)
-
 	for (let i = 1; i < arr.length; i++) {
 		let currentSumNum = sumsArr[sumsArr.length - 1]
 		let	 currentNum = arr[i]
